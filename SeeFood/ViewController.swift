@@ -20,11 +20,19 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         super.viewDidLoad()
         
         imagePicker.delegate = self
-        imagePicker.sourceType = .camera
+        imagePicker.sourceType = .photoLibrary
+        //imagePicker.sourceType = .camera
         imagePicker.allowsEditing = false
     }
 
-
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        print("finish")
+        if let userPickedImage = info[UIImagePickerControllerOriginalImage] as? UIImage {
+            imageView.image = userPickedImage
+        }
+        imagePicker.dismiss(animated: true, completion: nil)
+    }
+    
     @IBAction func cameraTapped(_ sender: UIBarButtonItem) {
         present(imagePicker, animated: true, completion: nil)
     }
