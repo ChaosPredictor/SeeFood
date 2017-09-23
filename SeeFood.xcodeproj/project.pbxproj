@@ -12,6 +12,7 @@
 		AFD1CA951F76A29900AA16FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFD1CA931F76A29900AA16FE /* Main.storyboard */; };
 		AFD1CA971F76A29900AA16FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFD1CA961F76A29900AA16FE /* Assets.xcassets */; };
 		AFD1CA9A1F76A29900AA16FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFD1CA981F76A29900AA16FE /* LaunchScreen.storyboard */; };
+		AFD1CAA21F76D70500AA16FE /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = AFD1CAA11F76A4A100AA16FE /* Inceptionv3.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -139,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AFD1CA921F76A29900AA16FE /* ViewController.swift in Sources */,
+				AFD1CAA21F76D70500AA16FE /* Inceptionv3.mlmodel in Sources */,
 				AFD1CA901F76A29900AA16FE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
